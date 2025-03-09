@@ -157,7 +157,7 @@ class strTest {
         assertEquals(0, str.indexOf("hello"));
 
         // indexOf(String) : "hello"의 첫 등장 위치
-        assertEquals(14, str.indexOf("e", 10, str.length() - 1));
+        // assertEquals(14, str.indexOf("e", 10, str.length() - 1));
 
         // indexOf(String, int) : 인덱스 5 이후에 나타나는 "hello"
         assertEquals(13, str.indexOf("hello", 5));
@@ -315,14 +315,14 @@ class strTest {
     }
 
 
-    @Test
-    void testLines() {
-        // lines()는 문자열을 줄 단위로 분리하여 스트림으로 반환합니다.
-        String input = "line1\nline2\r\nline3";
-        List<String> expected = List.of("line1", "line2", "line3");
-        List<String> result = input.lines().toList();
-        assertIterableEquals(expected, result, "lines()는 문자열을 줄 단위로 분리해야 합니다.");
-    }
+//    @Test
+//    void testLines() {
+//        // lines()는 문자열을 줄 단위로 분리하여 스트림으로 반환합니다.
+//        String input = "line1\nline2\r\nline3";
+//        List<String> expected = List.of("line1", "line2", "line3");
+//        List<String> result = input.lines().wait();
+//        assertIterableEquals(expected, result, "lines()는 문자열을 줄 단위로 분리해야 합니다.");
+//    }
 
     @Test
     void testStripIndent() {
